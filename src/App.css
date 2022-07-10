@@ -1,38 +1,58 @@
-.App {
+body {
+  background-color: #e7e3d9 !important;
+  color: rgb(48 48 48 / 87%) !important;
+}
+.result-item {
+  padding: 15px !important;
+}
+.large.text {
+  font-size: 1.5rem;
+}
+.text-center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+  margin-top: 20px;
+}
+.question-card {
+  background-color: #ffffff !important;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question-index-status {
+  padding: 15px;
+  float: right;
+  font-weight: bold;
+}
+.question-options {
+  padding-top: 20px;
+}
+.m-t-3 {
+ margin-top: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.result-incorrect {
+  background-color: #edd3d3;
 }
-
-.App-link {
-  color: #61dafb;
+.result-incorrect > .icon-incorrect {
+  display: table-cell !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-incorrect > .icon-correct {
+  display: none !important;
+}
+.result-correct > .icon-correct {
+  display: table-cell !important;
+}
+.result-correct > .icon-incorrect {
+  display: none !important;
+}
+.result-item-explanation {
+  margin-left: 3.5rem;
+  font-size: 1rem;
+}
+.green {
+  color: green;
+}
+.red {
+  color: darkred;
 }
